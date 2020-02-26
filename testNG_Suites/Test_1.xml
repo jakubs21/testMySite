@@ -1,0 +1,26 @@
+<suite name="Test_Games">
+    <test name="Test Balloon Page">
+        <classes>
+            <class name="pl.jakub.myWebsite.pages.homePage.HomePageTest"/>
+            <class name="pl.jakub.myWebsite.pages.ballonPage.BallonPageTest">
+                <methods>
+                    <include name="init"/>
+                    <include name="startBalloonGame"/>
+                    <include name="ballonGameEnd"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test Math Game">
+        <classes>
+            <class name="pl.jakub.myWebsite.pages.mathPage.MathPageTest">
+                <methods>
+                    <include name="openMatchPage"/>
+                    <include name="startMatchGame"/>
+                    <include name="checkScore"/>
+                </methods>
+            </class>
+            <class name="pl.jakub.myWebsite.pages.CloseDriver"/>
+        </classes>
+    </test>
+</suite>
